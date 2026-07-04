@@ -28,6 +28,14 @@ reviewers prefer.
   `colorschemes/psql/`
 - **Bindings** (`powerline/bindings/psql/`), docs, lint registration
 
+## Example
+
+![psql with powerline prompt](source/images/psql-powerline-example.png)
+
+PostgreSQL superuser role → red user segment; database name after `\c` → green
+segment; failed query → red exit-status segment.  See postgres
+`src/bin/psql/powerline-integration.md` for details.
+
 ## Usage
 
 ```sql

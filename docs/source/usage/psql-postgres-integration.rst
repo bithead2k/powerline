@@ -34,6 +34,20 @@ Powerline side (this patch)
   :py:mod:`powerline.segments.psql`
 - Renderer: :py:mod:`powerline.renderers.psql` (readline markers)
 
+Example screenshot
+------------------
+
+End-to-end session with both patches configured (built psql, this extension,
+sample :file:`~/.psqlrc`):
+
+.. image:: /images/psql-powerline-example.png
+   :alt: psql interactive session with powerline prompt segments
+
+The red **user** segment indicates a PostgreSQL superuser role
+(:envvar:`PSQL_SUPERUSER=1`).  The green **database** segment appears after
+``\\c`` when the database name differs from the user.  The red status segment
+after ``SELECT 1/0`` reflects :varname:`SHELL_EXIT`.
+
 Backward compatibility
 ----------------------
 
